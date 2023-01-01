@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone</title>
+    <link rel="stylesheet" href=".dist/output.css">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+    </style>
+    <script src="https://kit.fontawesome.com/de01e3e79c.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="bg-[#23242B]">
+    <div class="flex "> <!--Total page-->
+        <div class="flex-row w-1/6 h-screen">
+            <div class="flex-col align-middle bg-[#2c3034]  border-stone-500 border-r-2 h-screen"> <!--dashboard-->
+                <div class="text-[#BBBBBD] flex items-center pt-8 gap-4 ml-12">
+                    <i class="text-3xl fa-solid fa-table-cells-large"></i>
+                    <p class="text-2xl">Dashboard</p>
+                </div>
+                <div class="text-[#BBBBBD]  hover:text-orange-600 hover:bg-[#686b74] hover:border-l-4 hover:border-orange-600 flex flex-row gap-6 pl-8 p-1 mt-6">
+                    <i class="fa-solid fa-house"></i>
+                    <p class="hover:text-zinc-200">Home</p>
+                </div>
+                <div class="text-[#BBBBBD]  hover:text-orange-600 hover:bg-[#686b74] hover:border-l-4 hover:border-orange-600 flex flex-row gap-6 pl-8 p-1">
+                    <i class="fa-solid fa-id-card"></i>
+                    <p>Proflie</p>
+                </div>
+                <div class="text-[#BBBBBD]  hover:text-orange-600 hover:bg-[#686b74] hover:border-l-4 hover:border-orange-600 flex flex-row gap-6 pl-8 p-1">
+                    <i class="fa-solid fa-message"></i>
+                    <p>Messages</p>
+                </div>
+                <div class="text-[#BBBBBD]  hover:text-orange-600 hover:bg-[#686b74] hover:border-l-4 hover:border-orange-600 flex flex-row gap-6 pl-8 p-1">
+                    <i class="fa-solid fa-clock"></i>
+                    <p>History</p>
+                </div>
+                <div class="text-[#BBBBBD]  hover:text-orange-600 hover:bg-[#686b74] hover:border-l-4 hover:border-orange-600 flex flex-row gap-6 pl-8 p-1">
+                    <i class="fa-solid fa-clipboard"></i>
+                    <p>Tasks</p>
+                </div>
+                <div class="text-[#BBBBBD]  hover:text-orange-600 hover:bg-[#686b74] hover:border-l-4 hover:border-orange-600 flex flex-row gap-6 pl-8 p-1 mb-8">
+                    <i class="fa-solid fa-people-group"></i>
+                    <p>Communities</p>
+                </div>
+                <div class="text-[#BBBBBD]  hover:text-orange-600 hover:bg-[#686b74] hover:border-l-4 hover:border-orange-600 flex flex-row gap-6 pl-8 p-1">
+                    <i class="fa-solid fa-gear"></i>
+                    <p class="subnav-text">Settings</p>
+                </div>
+                <div class="text-[#BBBBBD]  hover:text-orange-600 hover:bg-[#686b74] hover:border-l-4 hover:border-orange-600 flex flex-row gap-6 pl-8 p-1">
+                    <i class="fa-solid fa-headset"></i>
+                    <p class="subnav-text">Support</p>
+                </div>
+                <div class="text-[#BBBBBD]  hover:text-orange-600 hover:bg-[#686b74] hover:border-l-4 hover:border-orange-600 flex flex-row gap-6 pl-8 p-1">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <p class="subnav-text">Privacy</p>
+                </div>
+            </div>
+        </div> <!--dashboard--ends-->
+
+        <div class="flex-1 justify-between w-4/5 h-screen"> <!--Content-->
+            <div class="flex flex-col bg-[#2c3034] border-stone-500 border-b-2 pl-2"> <!--search-->
+                <div class="flex flex-row justify-between align-middle mt-4"> <!--top1-->
+                    <div class="text-[#838383] w-2/3"> <!--Sbar-->
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" class="border-solid bg-[#838383] rounded-full h-3 w-3/4">
+                    </div>
+                    <div class="flex flex-row gap-4 items-center pr-4"> <!--Account1-->
+                        <div class="text-[#838383]"> <!--notify-icon-->
+                            <i class="fa-solid fa-bell"></i>
+                        </div>
+                        <div class="flex flex-row items-center gap-2"> <!--img and name-->
+                            <img src="https://ca.slack-edge.com/T04GCL44VUJ-U04FY4DESTZ-41103b46cc32-512" alt="profile"
+                                class="h-10 w-10 rounded-full">
+                            <h3 class="text-[#c0bfc1]">Sethu Ravichandran</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-row justify-between"> <!--top2-->
+                    <div class="flex flex-row gap-2 items-center pr-4 pb-2"> <!--account2-->
+                        <div class="">
+                            <img src="https://ca.slack-edge.com/T04GCL44VUJ-U04FY4DESTZ-41103b46cc32-512" alt="profile"
+                                class="h-14 w-14 rounded-full ">
+                        </div>
+                        <div class="text-[#c0bfc1]">
+                            Hi there,
+                            <h3>Sethu Ravichandran (@sethu-che)</h3>
+                        </div>
+                    </div>
+                    <div class="flex flex-row gap-2 text-[#838383] pr-4"> <!--support-->
+                        <button>
+                            <div class="border-[#7f7f7f] border-2 px-4 py-1 rounded-full">New</div>
+                        </button>
+                        <button>
+                            <div class="border-[#7f7f7f] border-2 px-4 py-1 rounded-full">Upload</div>
+                        </button>
+                        <button>
+                            <div class="border-[#7f7f7f] border-2 px-4 py-1 rounded-full">Share</div>
+                        </button>
+                    </div>
+                </div>
+            </div>  <!--/search-->
+
+            <div class="flex flex-wrap text-[#808080] bg-[#23242B] ">   <!--main--> 
+                <div class="flex flex-col flex-[max(200px,70%)] p-2 ">   <!--left-->
+                    <div class="flex flex-col">   <!--grid-wrap-->
+                        <h4 class="pb-2 text-[#c0bfc1]">My Projects</h4>
+                        <div class="flex flex-wrap gap-3 justify-evenly">   <!--grid-->
+                            <div class="flex-col flex-[max(300px,100%/3)] border-2 border-[#15161a] rounded-xl gap-4 p-3 bg-[#2c3034]"> <!--card-1-->
+                                <h4 class="text-[#c0bfc1]">
+                                    Super Cool Project
+                                  </h4>
+                                <p class="text-[#838383]"> 
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto ab quod quasi porro dolore quam, accusantium minus esse natus cumque sunt, </p>
+                                <div class="flex items-center gap-2 justify-end text-[#838383]">   <!--icon-container-->
+                                    <div class="">
+                                    <i class="fa-solid fa-share"></i>
+                                    </div>
+                                    <div class="">
+                                    <i class="fa-solid fa-eye-slash"></i>
+                                    </div>
+                                    <div class="">
+                                    <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div> <!--card-->
+                            <div class="flex-col flex-[max(300px,100%/3)] border-2 border-[#15161a] rounded-xl gap-4 p-3 bg-[#2c3034]"> <!--card-2-->
+                                <h4 class="text-[#c0bfc1]">
+                                    Less Cool Project
+                                  </h4>
+                                <p class="text-[#838383]"> 
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto ab quod quasi porro dolore quam, accusantium minus esse natus cumque sunt, </p>
+                                <div class="flex items-center gap-2 justify-end text-[#838383]">   <!--icon-container-->
+                                    <div class="">
+                                    <i class="fa-solid fa-share"></i>
+                                    </div>
+                                    <div class="">
+                                    <i class="fa-solid fa-eye-slash"></i>
+                                    </div>
+                                    <div class="">
+                                    <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div> <!--card-->
+                            <div class="flex-col flex-[max(300px,100%/3)] border-2 border-[#15161a] rounded-xl gap-4 p-3 bg-[#2c3034]"> <!--card-3-->
+                                <h4 class="text-[#c0bfc1]">
+                                    Impossible App
+                                  </h4>
+                                <p class="text-[#838383]"> 
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto ab quod quasi porro dolore quam, accusantium minus esse natus cumque sunt, </p>
+                                <div class="flex items-center gap-2 justify-end text-[#838383]">   <!--icon-container-->
+                                    <div class="">
+                                    <i class="fa-solid fa-share"></i>
+                                    </div>
+                                    <div class="">
+                                    <i class="fa-solid fa-eye-slash"></i>
+                                    </div>
+                                    <div class="">
+                                    <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div> <!--card-->
+                            <div class="flex-col flex-[max(300px,100%/3)] border-2 border-[#15161a] rounded-xl gap-4 p-3 bg-[#2c3034]"> <!--card-4-->
+                                <h4 class="text-[#c0bfc1]">
+                                    Easy Peasy App
+                                  </h4>
+                                <p class="text-[#838383]"> 
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto ab quod quasi porro dolore quam, accusantium minus esse natus cumque sunt, </p>
+                                <div class="flex items-center gap-2 justify-end text-[#838383]">   <!--icon-container-->
+                                    <div class="">
+                                    <i class="fa-solid fa-share"></i>
+                                    </div>
+                                    <div class="">
+                                    <i class="fa-solid fa-eye-slash"></i>
+                                    </div>
+                                    <div class="">
+                                    <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div> <!--card-->
+                            <div class="flex-col flex-[max(300px,100%/3)] border-2 border-[#15161a] rounded-xl gap-4 p-3 bg-[#2c3034]"> <!--card-5-->
+                                <h4 class="text-[#c0bfc1]">
+                                    Ad Blocker
+                                  </h4>
+                                <p class="text-[#838383]"> 
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto ab quod quasi porro dolore quam, accusantium minus esse natus cumque sunt, </p>
+                                <div class="flex items-center gap-2 justify-end text-[#838383]">   <!--icon-container-->
+                                    <div class="">
+                                    <i class="fa-solid fa-share"></i>
+                                    </div>
+                                    <div class="">
+                                    <i class="fa-solid fa-eye-slash"></i>
+                                    </div>
+                                    <div class="">
+                                    <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div> <!--card-->
+                            <div class="flex-col flex-[max(300px,100%/3)] border-2 border-[#15161a] rounded-xl gap-4 p-3 bg-[#2c3034]"> <!--card-6-->
+                                <h4 class="text-[#c0bfc1]">
+                                    Money Making App
+                                  </h4>
+                                <p class="text-[#838383]"> 
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto ab quod quasi porro dolore quam, accusantium minus esse natus cumque sunt, </p>
+                                <div class="flex items-center gap-2 justify-end text-[#838383]">   <!--icon-container-->
+                                    <div class="">
+                                    <i class="fa-solid fa-share"></i>
+                                    </div>
+                                    <div class="">
+                                    <i class="fa-solid fa-eye-slash"></i>
+                                    </div>
+                                    <div class="">
+                                    <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div> <!--card-->              
+                        </div> <!--/grid-->
+                    </div><!--/grid-wrap-->
+                </div>  <!--/left--> 
+
+                <div class="flex-col flex-[max(200px,25%)] bg-[#23242b] pt-2 ">   <!--right-->
+                    <div class="flex flex-col flex-[max(200px,(100%/3))]" >  <!--announce-wrap-->
+                        <h4 class="pb-2 text-[#c0bfc1]">Announcement</h4>
+                        <div class="flex-col border-2 border-[#15161a] rounded-xl gap-4 bg-[#2c3034] p-3">   <!--announce-->
+                            <div class=" border-b-2 border-[#7f7f7f]">   <!--message-->
+                                <h5 class="text-[#c0bfc1]">Site Maintenance</h5>
+                                <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias aliquid Alias aliquid
+                                </p> 
+                            </div >
+                            <div class="pt-1 border-b-2 border-[#7f7f7f]">   <!--message-2-->
+                                <h5 class="text-[#c0bfc1]">Community Share Day</h5>
+                                <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias aliquid Alias aliquid
+                                </p>
+                            </div>
+                            <div class="pt-1">   <!--message-3-->
+                                <h5 class="text-[#c0bfc1]">Updated Privacy Policy</h5>
+                                <p> 
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias aliquid Alias aliquid
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="flex-col flex-[max(200px,(100%/3))] p-2">   <!--people-wrap-->
+                        <h4 class="pb-2 text-[#c0bfc1]">People</h4>
+                        <div class="flex-col px-6 py-2 border-2 border-[#15161a] rounded-xl gap-4 bg-[#2c3034] ">   <!--people-->
+                            <div class="flex items-center gap-4 pb-2">
+                                <div class="h-12 w-12 rounded-full">  <!--image-->
+                                    <img src="src/assets/img/carlo.png" alt="">
+                                </div>  <!--/image-->
+                                <h4 class="text-[#c0bfc1]">@Carlo</h4>
+                          </div>
+                          <div class="flex items-center gap-4 pb-2">
+                                <div class="h-12 w-12 rounded-full">  <!--image-->
+                                    <img src="src/assets/img/jenny.png" alt="">
+                                </div>  <!--/image-->
+                                <h4 class="text-[#c0bfc1]">@Jenny</h4>
+                          </div>
+                          <div class="flex items-center gap-4">
+                                <div class="h-12 w-12 rounded-full">  <!--image-->
+                                    <img src="src/assets/img/jaswanth.png" alt="">
+                                </div>  <!--/image-->
+                                <h4 class="text-[#c0bfc1]">@Jashwanth</h4>
+                          </div>
+                        </div>  <!--/people-->
+                    </div>  <!--/people-wrap-->
+                </div>  <!--/right-->
+            </div>  <!--/main-->
+        </div>  <!--/content--> 
+
+    </div>
+
+
+</body>
+
+</html>
