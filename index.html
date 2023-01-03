@@ -6,92 +6,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clone</title>
-    <link rel="stylesheet" href=".dist/output.css">
+    <link rel="stylesheet" href="./dist/output.css">
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
     </style>
     <script src="https://kit.fontawesome.com/de01e3e79c.js" crossorigin="anonymous"></script>
-
 </head>
 
 <body class="bg-[#23242B]">
-    <div class="flex "> <!--Total page-->
-        <div class="flex-row w-1/6 h-screen">
-            <div class="flex-col align-middle bg-[#2c3034]  border-stone-500 border-r-2 h-screen"> <!--dashboard-->
-                <div class="text-[#BBBBBD] flex items-center pt-8 gap-4 ml-12">
-                    <i class="text-3xl fa-solid fa-table-cells-large"></i>
-                    <p class="text-2xl">Dashboard</p>
+    <div class="flex"> <!--Total page-->
+        <div class="dashboard w-3/5 hidden fixed z-10 sm:w-1/6 sm:relative sm:block">
+            <div class=" sm:block align-middle bg-[#2c3034] border-stone-500 border-r-2 h-screen"> <!--dashboard-->
+                <div class="text-[#BBBBBD] flex items-center pt-8 gap-4 ml-1s2">
+                    <i class="hidden sm:block text-3xl fa-solid fa-table-cells-large"></i>
+                    <button class="hamburger  ml-8 block sm:hidden bg-[#2c3034] text-[#838383] border-2-[#2c3034]"><i class="fa-solid fa-bars"></i></button>
+                    <p class="hidden md:block text-2xl">Dashboard</p>
                 </div>
-                <div class="text-[#BBBBBD]  hover:text-orange-600 hover:bg-[#686b74] hover:border-l-4 hover:border-orange-600 flex flex-row gap-6 pl-8 p-1 mt-6">
+                <div class=" text-[#BBBBBD]  hover:text-orange-600 hover:bg-[#686b74] hover:border-l-4 hover:border-orange-600 flex flex-row gap-6 pl-8 p-1 mt-6">
                     <i class="fa-solid fa-house"></i>
-                    <p class="hover:text-zinc-200">Home</p>
+                    <p class="hover:text-zinc-200  hidden md:block">Home</p>
                 </div>
                 <div class="text-[#BBBBBD]  hover:text-orange-600 hover:bg-[#686b74] hover:border-l-4 hover:border-orange-600 flex flex-row gap-6 pl-8 p-1">
                     <i class="fa-solid fa-id-card"></i>
-                    <p>Proflie</p>
+                    <p class="hidden md:block">Proflie</p>
                 </div>
                 <div class="text-[#BBBBBD]  hover:text-orange-600 hover:bg-[#686b74] hover:border-l-4 hover:border-orange-600 flex flex-row gap-6 pl-8 p-1">
                     <i class="fa-solid fa-message"></i>
-                    <p>Messages</p>
+                    <p class="hidden md:block">Messages</p>
                 </div>
                 <div class="text-[#BBBBBD]  hover:text-orange-600 hover:bg-[#686b74] hover:border-l-4 hover:border-orange-600 flex flex-row gap-6 pl-8 p-1">
                     <i class="fa-solid fa-clock"></i>
-                    <p>History</p>
+                    <p class="hidden md:block">History</p>
                 </div>
                 <div class="text-[#BBBBBD]  hover:text-orange-600 hover:bg-[#686b74] hover:border-l-4 hover:border-orange-600 flex flex-row gap-6 pl-8 p-1">
                     <i class="fa-solid fa-clipboard"></i>
-                    <p>Tasks</p>
+                    <p class="hidden md:block">Tasks</p>
                 </div>
                 <div class="text-[#BBBBBD]  hover:text-orange-600 hover:bg-[#686b74] hover:border-l-4 hover:border-orange-600 flex flex-row gap-6 pl-8 p-1 mb-8">
                     <i class="fa-solid fa-people-group"></i>
-                    <p>Communities</p>
+                    <p class="hidden md:block">Communities</p>
                 </div>
                 <div class="text-[#BBBBBD]  hover:text-orange-600 hover:bg-[#686b74] hover:border-l-4 hover:border-orange-600 flex flex-row gap-6 pl-8 p-1">
                     <i class="fa-solid fa-gear"></i>
-                    <p class="subnav-text">Settings</p>
+                    <p class=" hidden md:block">Settings</p>
                 </div>
                 <div class="text-[#BBBBBD]  hover:text-orange-600 hover:bg-[#686b74] hover:border-l-4 hover:border-orange-600 flex flex-row gap-6 pl-8 p-1">
                     <i class="fa-solid fa-headset"></i>
-                    <p class="subnav-text">Support</p>
+                    <p class=" hidden md:block">Support</p>
                 </div>
                 <div class="text-[#BBBBBD]  hover:text-orange-600 hover:bg-[#686b74] hover:border-l-4 hover:border-orange-600 flex flex-row gap-6 pl-8 p-1">
                     <i class="fa-solid fa-shield-halved"></i>
-                    <p class="subnav-text">Privacy</p>
+                    <p class=" hidden md:block">Privacy</p>
                 </div>
             </div>
         </div> <!--dashboard--ends-->
 
-        <div class="flex-1 justify-between w-4/5 h-screen"> <!--Content-->
+        <div class="flex-1 justify-between h-screen"> <!--Content-->
             <div class="flex flex-col bg-[#2c3034] border-stone-500 border-b-2 pl-2"> <!--search-->
-                <div class="flex flex-row justify-between align-middle mt-4"> <!--top1-->
-                    <div class="text-[#838383] w-2/3"> <!--Sbar-->
+                <div class="flex flex-row justify-between align-middle mt-4 pb-4"> <!--top1-->
+                    <div class="text-[#838383] flex flex-row gap-2  items-center w-2/3"> <!--Sbar-->
+                        <button class="hamburger xl:hidden md:hidden sm: bg-[#2c3034] text-[#838383] border-2-[#2c3034] block"><i class="fa-solid fa-bars"></i></button>
                         <i class="fa-solid fa-magnifying-glass"></i>
                         <input type="text" class="border-solid bg-[#838383] rounded-full h-3 w-3/4">
                     </div>
-                    <div class="flex flex-row gap-4 items-center pr-4"> <!--Account1-->
-                        <div class="text-[#838383]"> <!--notify-icon-->
-                            <i class="fa-solid fa-bell"></i>
+                    <div class="flex flex-row gap-4 items-center mr-6"> <!--Account1-->
+                        <div class="text-[#838383] mr-2"> <!--notify-icon-->
+                            <i class="fa-solid fa-bell ml-2"></i>
                         </div>
-                        <div class="flex flex-row items-center gap-2"> <!--img and name-->
+                        <div class="flex flex-row items-center gap-2 flex-wrap"> <!--img and name-->
                             <img src="https://ca.slack-edge.com/T04GCL44VUJ-U04FY4DESTZ-41103b46cc32-512" alt="profile"
-                                class="h-10 w-10 rounded-full">
-                            <h3 class="text-[#c0bfc1]">Sethu Ravichandran</h3>
+                                class="hidden sm:block w-10 h-10 rounded-full">
+                            <h3 class="text-[#c0bfc1] flex-wrap">Sethu Ravichandran</h3>
                         </div>
                     </div>
                 </div>
                 <div class="flex flex-row justify-between"> <!--top2-->
-                    <div class="flex flex-row gap-2 items-center pr-4 pb-2"> <!--account2-->
+                    <div class="flex flex-row gap-2 items-center pr-4 pb-4"> <!--account2-->
                         <div class="">
                             <img src="https://ca.slack-edge.com/T04GCL44VUJ-U04FY4DESTZ-41103b46cc32-512" alt="profile"
-                                class="h-14 w-14 rounded-full ">
+                                class="rounded-full h-10 w-10 sm:h-14 sm:w-14  ">
                         </div>
                         <div class="text-[#c0bfc1]">
                             Hi there,
                             <h3>Sethu Ravichandran (@sethu-che)</h3>
                         </div>
                     </div>
-                    <div class="flex flex-row gap-2 text-[#838383] pr-4"> <!--support-->
+                    <div class="flex flex-row gap-2 flex-wrap text-[#838383] pr-4"> <!--support-->
                         <button>
                             <div class="border-[#7f7f7f] border-2 px-4 py-1 rounded-full">New</div>
                         </button>
@@ -110,7 +111,7 @@
                     <div class="flex flex-col">   <!--grid-wrap-->
                         <h4 class="pb-2 text-[#c0bfc1]">My Projects</h4>
                         <div class="flex flex-wrap gap-3 justify-evenly">   <!--grid-->
-                            <div class="flex-col flex-[max(300px,100%/3)] border-2 border-[#15161a] rounded-xl gap-4 p-3 bg-[#2c3034]"> <!--card-1-->
+                            <div class="flex-col flex-[max(300px,100%/3)]  border-l-8 border-[#6c50a0] rounded-xl gap-4 p-3 bg-[#2c3034]"> <!--card-1-->
                                 <h4 class="text-[#c0bfc1]">
                                     Super Cool Project
                                   </h4>
@@ -128,7 +129,7 @@
                                     </div>
                                 </div>
                             </div> <!--card-->
-                            <div class="flex-col flex-[max(300px,100%/3)] border-2 border-[#15161a] rounded-xl gap-4 p-3 bg-[#2c3034]"> <!--card-2-->
+                            <div class="flex-col flex-[max(300px,100%/3)] border-l-8 border-[#6c50a0] rounded-xl gap-4 p-3 bg-[#2c3034]"> <!--card-2-->
                                 <h4 class="text-[#c0bfc1]">
                                     Less Cool Project
                                   </h4>
@@ -146,7 +147,7 @@
                                     </div>
                                 </div>
                             </div> <!--card-->
-                            <div class="flex-col flex-[max(300px,100%/3)] border-2 border-[#15161a] rounded-xl gap-4 p-3 bg-[#2c3034]"> <!--card-3-->
+                            <div class="flex-col flex-[max(300px,100%/3)] border-l-8 border-[#6c50a0] rounded-xl gap-4 p-3 bg-[#2c3034]"> <!--card-3-->
                                 <h4 class="text-[#c0bfc1]">
                                     Impossible App
                                   </h4>
@@ -164,7 +165,7 @@
                                     </div>
                                 </div>
                             </div> <!--card-->
-                            <div class="flex-col flex-[max(300px,100%/3)] border-2 border-[#15161a] rounded-xl gap-4 p-3 bg-[#2c3034]"> <!--card-4-->
+                            <div class="flex-col flex-[max(300px,100%/3)] border-l-8 border-[#6c50a0] rounded-xl gap-4 p-3 bg-[#2c3034]"> <!--card-4-->
                                 <h4 class="text-[#c0bfc1]">
                                     Easy Peasy App
                                   </h4>
@@ -182,7 +183,7 @@
                                     </div>
                                 </div>
                             </div> <!--card-->
-                            <div class="flex-col flex-[max(300px,100%/3)] border-2 border-[#15161a] rounded-xl gap-4 p-3 bg-[#2c3034]"> <!--card-5-->
+                            <div class="flex-col flex-[max(300px,100%/3)] border-l-8 border-[#6c50a0] rounded-xl gap-4 p-3 bg-[#2c3034]"> <!--card-5-->
                                 <h4 class="text-[#c0bfc1]">
                                     Ad Blocker
                                   </h4>
@@ -200,7 +201,7 @@
                                     </div>
                                 </div>
                             </div> <!--card-->
-                            <div class="flex-col flex-[max(300px,100%/3)] border-2 border-[#15161a] rounded-xl gap-4 p-3 bg-[#2c3034]"> <!--card-6-->
+                            <div class="flex-col flex-[max(300px,100%/3)] border-l-8 border-[#6c50a0] rounded-xl gap-4 p-3 bg-[#2c3034]"> <!--card-6-->
                                 <h4 class="text-[#c0bfc1]">
                                     Money Making App
                                   </h4>
@@ -276,7 +277,7 @@
 
     </div>
 
-
+<script src="./script.js"></script>
 </body>
 
 </html>
